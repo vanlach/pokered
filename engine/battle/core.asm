@@ -2133,7 +2133,7 @@ DisplayBattleMenu:
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
 .oldManName
-	db "OLD MAN@"
+	db "Old Man@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
@@ -2765,7 +2765,7 @@ MoveDisabledText:
 	db "@"
 
 WhichTechniqueString:
-	db "WHICH TECHNIQUE?@"
+	db "Which Technique?@"
 
 SelectMenuItem_CursorUp:
 	ld a, [wCurrentMenuItem]
@@ -2988,7 +2988,7 @@ DisabledText:
 	db "disabled!@"
 
 TypeText:
-	db "TYPE@"
+	db "Type@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]
@@ -7958,12 +7958,12 @@ PrintStatText:
 	jp CopyData
 
 StatsTextStrings:
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
-	db "ACCURACY@"
-	db "EVADE@"
+	db "Attack@"
+	db "Defense@"
+	db "Speed@"
+	db "Special@"
+	db "Accuracy@"
+	db "Evade@"
 
 StatModifierRatios:
 ; first byte is numerator, second byte is denominator

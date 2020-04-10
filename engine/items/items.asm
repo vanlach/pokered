@@ -826,7 +826,7 @@ ItemUseMedicine:
 	jp PrintText
 .emptyPartyText
 	text "You don't have"
-	line "any #MON!"
+	line "any #mon!"
 	prompt
 .notUsingSoftboiled
 	call DisplayPartyMenu
@@ -1425,11 +1425,11 @@ VitaminNoEffectText:
 	db "@"
 
 VitaminText:
-	db "HEALTH@"
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
+	db "Health@"
+	db "Attack@"
+	db "Defense@"
+	db "Speed@"
+	db "Special@"
 
 ItemUseBait:
 	ld hl, ThrewBaitText

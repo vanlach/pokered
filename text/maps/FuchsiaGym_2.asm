@@ -1,6 +1,6 @@
 _KogaExplainToxicText::
 	text "When afflicted by"
-	line "TOXIC, #MON"
+	line "Toxic, #mon"
 	cont "suffer more and"
 	cont "more as battle"
 	cont "progresses!"
@@ -11,13 +11,13 @@ _KogaExplainToxicText::
 
 _FuchsiaGymText9::
 	text "Now that you have"
-	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
+	line "the Soulbadge,"
+	cont "the Defense of"
+	cont "your #mon"
 	cont "increases!"
 
 	para "It also lets you"
-	line "SURF outside of"
+	line "Surf outside of"
 	cont "battle!"
 
 	para "Ah! Take this"
@@ -33,7 +33,7 @@ _ReceivedTM06Text::
 _TM06ExplanationText::
 	text ""
 	para "TM06 contains"
-	line "TOXIC!"
+	line "Toxic!"
 
 	para "It is a secret"
 	line "technique over"
@@ -48,7 +48,7 @@ _TM06NoRoomText::
 _FuchsiaGymBattleText1::
 	text "Strength isn't"
 	line "the key for"
-	cont "#MON!"
+	cont "#mon!"
 
 	para "It's strategy!"
 
@@ -82,7 +82,7 @@ _FuchsiaGymEndBattleText2::
 _FuchsiaGymAfterBattleText2::
 	text "I will keep on"
 	line "training under"
-	cont "KOGA, my ninja"
+	cont "Koga, my ninja"
 	cont "master!"
 	done
 
@@ -129,7 +129,7 @@ _FuchsiaGymAfterBattleText4::
 _FuchsiaGymBattleText5::
 	text "I also study the"
 	line "way of the ninja"
-	cont "with master KOGA!"
+	cont "with master Koga!"
 
 	para "Ninja have a long"
 	line "history of using"
@@ -146,7 +146,7 @@ _FuchsiaGymAfterBattleText5::
 	done
 
 _FuchsiaGymBattleText6::
-	text "Master KOGA comes"
+	text "Master Koga comes"
 	line "from a long line"
 	cont "of ninjas!"
 
@@ -173,11 +173,11 @@ _FuchsiaGymText_7564e::
 	text "Yo! Champ in"
 	line "making!"
 
-	para "FUCHSIA GYM is"
+	para "Fuchsia Gym is"
 	line "riddled with"
 	cont "invisible walls!"
 
-	para "KOGA might appear"
+	para "Koga might appear"
 	line "close, but he's"
 	cont "blocked off!"
 
