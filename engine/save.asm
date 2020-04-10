@@ -139,10 +139,6 @@ LoadSAVIgnoreBadCheckSum:
 
 SaveSAV:
 	callba PrintSaveScreenText
-	ld hl, WouldYouLikeToSaveText
-	call SaveSAVConfirm
-	and a   ;|0 = Yes|1 = No|
-	ret nz
 	ld a, [wSaveFileStatus]
 	dec a
 	jr z, .save
@@ -158,20 +154,13 @@ SaveSAV:
 	lb bc, 4, 18
 	call ClearScreenArea
 	coord hl, 1, 14
-	ld de, NowSavingString
-	call PlaceString
-	ld c, 120
-	call DelayFrames
 	ld hl, GameSavedText
 	call PrintText
 	ld a, SFX_SAVE
 	call PlaySoundWaitForCurrent
 	call WaitForSoundToFinish
-	ld c, 30
+	ld c, 10 ; Shorter time than before (30)
 	jp DelayFrames
-
-NowSavingString:
-	db "Now saving...@"
 
 SaveSAVConfirm:
 	call PrintText
@@ -182,10 +171,6 @@ SaveSAVConfirm:
 	call DisplayTextBoxID ; yes/no menu
 	ld a, [wCurrentMenuItem]
 	ret
-
-WouldYouLikeToSaveText:
-	TX_FAR _WouldYouLikeToSaveText
-	db "@"
 
 GameSavedText:
 	TX_FAR _GameSavedText
