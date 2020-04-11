@@ -905,6 +905,8 @@ FaintEnemyPokemon:
 	call SaveScreenTilesToBuffer1
 	xor a
 	ld [wBattleResult], a
+GiveEXPToMonsThatNeedIt:
+	xor a
 	ld b, EXP_ALL
 	call IsItemInBag
 	push af

@@ -517,6 +517,12 @@ ItemUseBall:
 	ld hl, ItemUseBallText05
 	call PrintText
 
+	ld a, [wWhichPokemon]
+	push af
+	callba GiveEXPToMonsThatNeedIt
+	pop af
+	ld [wWhichPokemon], a
+
 ; Add the caught Pokémon to the Pokédex.
 	predef IndexToPokedex
 	ld a, [wd11e]
